@@ -1,8 +1,28 @@
 
-'use client';
+import { Metadata } from 'next';
 import { Award, Users, Shield, Calculator, CheckCircle, AlertTriangle, PhoneCall, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Our Services - Notary, Immigration, Insurance & Tax Services in Weymouth, MA",
+  description: "Professional notary public services, immigration form preparation, insurance solutions, and tax & financial services in Weymouth, Massachusetts. Licensed and certified professionals.",
+  keywords: [
+    "notary public services weymouth",
+    "immigration form preparation massachusetts",
+    "insurance services weymouth ma",
+    "tax preparation weymouth",
+    "business insurance massachusetts",
+    "notary services near me",
+    "immigration assistance weymouth",
+    "tax services weymouth ma"
+  ],
+  openGraph: {
+    title: "Our Services - Notary, Immigration, Insurance & Tax Services in Weymouth, MA",
+    description: "Professional notary public services, immigration form preparation, insurance solutions, and tax & financial services in Weymouth, Massachusetts.",
+    url: "https://hoxhasolutions.com/services",
+  },
+};
 
 export default function Services(){
     return (

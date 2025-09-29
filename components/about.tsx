@@ -125,6 +125,18 @@ export default function Intro(){
         {/* Bottom line */}
         <div className="mt-10 border-t pt-6 text-center text-xs text-muted-foreground">
           © {new Date().getFullYear()} Hoxha Solutions. All rights reserved.
+          <br />
+          <span className="mt-2 block">
+            Made by{" "}
+            <Link 
+              href="https://codewithtoni.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-spektr-cyan-50 hover:text-spektr-cyan-50/80 transition-colors"
+            >
+              CodeWithToni
+            </Link>
+          </span>
         </div>
       </div>
     </footer>
