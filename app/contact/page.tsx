@@ -62,7 +62,7 @@ export default function Contact(){
                                         Message Sent!
                                     </h3>
                                     <p className="text-green-700 dark:text-green-300">
-                                        Thank you for contacting us. We'll get back to you within 24 hours.
+                                        Thank you for contacting us. We&apos;ll get back to you within 24 hours.
                                     </p>
                                 </div>
                             ) : (
@@ -166,7 +166,7 @@ export default function Contact(){
                                 <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
                                 <p className="text-lg text-muted-foreground mb-8">
                                     Visit our office in Weymouth, MA, or reach out to us by phone or email. 
-                                    We're here to help with all your professional service needs.
+                                    We&apos;re here to help with all your professional service needs.
                                 </p>
                             </div>
 
@@ -200,7 +200,7 @@ export default function Contact(){
                                         <div>
                                             <h3 className="text-xl font-semibold mb-2">Email</h3>
                                             <p className="text-muted-foreground mb-3">
-                                                Send us an email and we'll respond within 24 hours.
+                                                Send us an email and we&apos;ll respond within 24 hours.
                                             </p>
                                             <Link 
                                                 href="mailto:hoxhasolutions@outlook.com" 

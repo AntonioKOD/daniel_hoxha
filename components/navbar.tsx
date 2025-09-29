@@ -1,6 +1,6 @@
 'use client'
 
-import {Navbar, NavBody, NavItems, MobileNav, NavbarLogo, NavbarButton, MobileNavHeader, MobileNavToggle, MobileNavMenu} from '@/components/ui/resizable-navbar';
+import {Navbar, NavBody, NavItems, MobileNav, NavbarLogo, MobileNavHeader, MobileNavToggle, MobileNavMenu} from '@/components/ui/resizable-navbar';
 import Link from 'next/link';
 import {useState} from 'react';
 

@@ -1,6 +1,6 @@
 
 'use client';
-import { Clock, MapPin, PhoneCall, Mail, Award, Users, Shield, CheckCircle } from "lucide-react";
+import { Clock, MapPin, PhoneCall, Award, Users, Shield, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -27,7 +27,7 @@ export default function About() {
                         <p className="text-lg text-muted-foreground text-center leading-relaxed mb-12">
                             At Hoxha Solutions, we believe that professional services should be accessible, reliable, and tailored to your unique needs. 
                             Whether you need notarization for important documents, assistance with immigration forms, comprehensive insurance coverage, 
-                            or expert tax preparation, we're here to provide the expertise and personal attention you deserve.
+                            or expert tax preparation, we&apos;re here to provide the expertise and personal attention you deserve.
                         </p>
                         
                         <div className="grid md:grid-cols-3 gap-8">

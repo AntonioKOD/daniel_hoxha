@@ -1,5 +1,5 @@
 'use client';
-import { Clock, Instagram, InstagramIcon, Mail, MapPin, PhoneCall } from "lucide-react";
+import { Clock, Instagram, Mail, MapPin, PhoneCall } from "lucide-react";
 import { FeaturesSectionWithHoverEffects } from "./blocks/feature-section-with-hover-effects";
 import { Button } from "./ui/button";
 import Link  from "next/link";

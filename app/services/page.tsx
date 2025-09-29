@@ -184,7 +184,7 @@ export default function Services(){
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li>• Commercial insurance (restaurants, trucking, contractors, retail)</li>
                                             <li>• Landlord policies</li>
-                                            <li>• Workers' compensation & liability coverage</li>
+                                            <li>• Workers&apos; compensation & liability coverage</li>
                                         </ul>
                                     </div>
                                 </div>
