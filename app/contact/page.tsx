@@ -15,16 +15,34 @@ export default function Contact(){
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Here you would typically send the form data to your backend
-        console.log('Form submitted:', formData);
-        setIsSubmitted(true);
-        // Reset form after 3 seconds
-        setTimeout(() => {
-            setIsSubmitted(false);
-            setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-        }, 3000);
+        
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setIsSubmitted(true);
+                setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+                // Reset success message after 5 seconds
+                setTimeout(() => {
+                    setIsSubmitted(false);
+                }, 5000);
+            } else {
+                const errorData = await response.json();
+                console.error('Error:', errorData.error);
+                alert('Failed to send message. Please try again or call us directly.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Failed to send message. Please try again or call us directly.');
+        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
