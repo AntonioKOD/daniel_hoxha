@@ -5,23 +5,23 @@ export function FeaturesSectionWithHoverEffects() {
   
   const features = [
     {
-      title: "Notary Public",
+      title: "Notary Public Services",
       description:
-        "In-office notarization for acknowledgments, jurats, and sworn statements.",
+        "Professional in-person notarization for acknowledgments, jurats, oaths/affirmations, and apostille facilitation. Signers must be physically present in Massachusetts.",
     },
     {
-      title: "Immigration Form Prep (non-legal)",
+      title: "Immigration Form Preparation",
       description:
-        "Document preparation for family petitions, green cards, N-400, DS-160.",
+        "Expert assistance with family petitions, green cards, N-400, DS-160, and adjustment of status forms. (Non-legal services with disclaimers)",
     },
     {
-      title: "Insurance (MA Licensed)",
+      title: "Insurance Services (MA Licensed)",
       description:
-        "Auto, home, renters, and business coverage tailored to your needs.",
+        "Comprehensive Property & Casualty coverage including auto, home, renters, business, specialty insurance, and workers' compensation.",
     },
     {
-      title: "Tax & Bookkeeping",
-      description: "Individual & small-business tax prep, bookkeeping, and payroll setup.",
+      title: "Tax & Financial Services",
+      description: "Individual & business tax preparation, bookkeeping for restaurants/trucking/contractors, and payroll setup and reporting.",
     }
   ];
   return (
