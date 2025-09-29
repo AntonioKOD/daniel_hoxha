@@ -36,10 +36,15 @@ export default function NavBar () {
                     
                 </NavBody>
                 <MobileNav>
-                    <MobileNavHeader>
-                        <NavbarLogo/>
-                        <MobileNavToggle isOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}/>
-                    </MobileNavHeader>
+                    <div className="flex w-full flex-row items-center justify-center relative">
+                        <div className="absolute left-0">
+                            <MobileNavToggle isOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}/>
+                        </div>
+                        <div className="flex-1 flex justify-center">
+                            <NavbarLogo/>
+                        </div>
+                        <div className="absolute right-0 w-6"></div>
+                    </div>
                     <MobileNavMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)}>
                         {navItems.map((item, idx)=> (
                             <Link 
